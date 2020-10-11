@@ -11,13 +11,16 @@
 		807358CB24B630CA0031DBFF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807358C924B630CA0031DBFF /* Interface.storyboard */; };
 		807358CD24B630CC0031DBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807358CC24B630CC0031DBFF /* Assets.xcassets */; };
 		807358D424B630CC0031DBFF /* SimpleTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 807358D324B630CC0031DBFF /* SimpleTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		807358D924B630CC0031DBFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358D824B630CC0031DBFF /* ContentView.swift */; };
+		807358D924B630CC0031DBFF /* SimpleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358D824B630CC0031DBFF /* SimpleTimerView.swift */; };
 		807358DB24B630CC0031DBFF /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358DA24B630CC0031DBFF /* HostingController.swift */; };
 		807358DD24B630CC0031DBFF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358DC24B630CC0031DBFF /* ExtensionDelegate.swift */; };
 		807358DF24B630CC0031DBFF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358DE24B630CC0031DBFF /* NotificationController.swift */; };
 		807358E124B630CC0031DBFF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358E024B630CC0031DBFF /* NotificationView.swift */; };
 		807358E324B630CD0031DBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807358E224B630CD0031DBFF /* Assets.xcassets */; };
 		807358E624B630CD0031DBFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807358E524B630CD0031DBFF /* Preview Assets.xcassets */; };
+		807358F724B636E60031DBFF /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358F624B636E60031DBFF /* TimerViewModel.swift */; };
+		807358F924B638B10031DBFF /* TimerCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358F824B638B10031DBFF /* TimerCountdownView.swift */; };
+		807358FB24B6445D0031DBFF /* TimerCountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807358FA24B6445D0031DBFF /* TimerCountdownViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +72,7 @@
 		807358CC24B630CC0031DBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		807358CE24B630CC0031DBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807358D324B630CC0031DBFF /* SimpleTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		807358D824B630CC0031DBFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		807358D824B630CC0031DBFF /* SimpleTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerView.swift; sourceTree = "<group>"; };
 		807358DA24B630CC0031DBFF /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		807358DC24B630CC0031DBFF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		807358DE24B630CC0031DBFF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -78,6 +81,9 @@
 		807358E524B630CD0031DBFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		807358E724B630CD0031DBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807358E824B630CD0031DBFF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		807358F624B636E60031DBFF /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		807358F824B638B10031DBFF /* TimerCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCountdownView.swift; sourceTree = "<group>"; };
+		807358FA24B6445D0031DBFF /* TimerCountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCountdownViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +129,10 @@
 		807358D724B630CC0031DBFF /* SimpleTimer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				807358D824B630CC0031DBFF /* ContentView.swift */,
+				807358D824B630CC0031DBFF /* SimpleTimerView.swift */,
+				807358F624B636E60031DBFF /* TimerViewModel.swift */,
+				807358F824B638B10031DBFF /* TimerCountdownView.swift */,
+				807358FA24B6445D0031DBFF /* TimerCountdownViewModel.swift */,
 				807358DA24B630CC0031DBFF /* HostingController.swift */,
 				807358DC24B630CC0031DBFF /* ExtensionDelegate.swift */,
 				807358DE24B630CC0031DBFF /* NotificationController.swift */,
@@ -273,10 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				807358DB24B630CC0031DBFF /* HostingController.swift in Sources */,
-				807358D924B630CC0031DBFF /* ContentView.swift in Sources */,
+				807358D924B630CC0031DBFF /* SimpleTimerView.swift in Sources */,
 				807358DF24B630CC0031DBFF /* NotificationController.swift in Sources */,
 				807358DD24B630CC0031DBFF /* ExtensionDelegate.swift in Sources */,
+				807358F924B638B10031DBFF /* TimerCountdownView.swift in Sources */,
 				807358E124B630CC0031DBFF /* NotificationView.swift in Sources */,
+				807358FB24B6445D0031DBFF /* TimerCountdownViewModel.swift in Sources */,
+				807358F724B636E60031DBFF /* TimerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
